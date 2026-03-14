@@ -77,3 +77,16 @@ a:hover {
   justify-content: space-between;
   gap: 1.5rem;
 }
+
+.site-footer {
+  margin-top: 60px;
+  padding: 25px 0;
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.footer-inner {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
