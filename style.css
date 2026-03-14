@@ -1,61 +1,85 @@
 :root {
-  --bg: #f8f7f4;
-  --surface: #ffffff;
-  --surface-alt: #f1eee8;
-  --text: #1f2937;
-  --muted: #5f6b7a;
-  --border: #ded8cf;
-  --accent: #2f5d50;
-  --accent-dark: #23473d;
-  --max-width: 1180px;
-  --radius: 18px;
-  --shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 }
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  font-family: Georgia, "Times New Roman", serif;
-  color: var(--text);
-  background: var(--bg);
-  line-height: 1.6;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-a {
-  color: var(--accent);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
+img { max-width: 100%; display: block; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
 
 .container {
-  width: min(var(--max-width), calc(100% - 2rem));
+  width: min(var(--max-width), calc(100% - 2.4rem));
   margin: 0 auto;
 }
 
 .narrow {
-  width: min(800px, 100%);
+  width: min(780px, 100%);
 }
 
 .site-header {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(248, 247, 244, 0.92);
+  background: rgba(255,255,255,0.92);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid rgba(216,224,234,0.8);
+}
+
+.nav-wrap {
+  min-height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  color: var(--text);
+  font-weight: 700;
+}
+
+.brand:hover { text-decoration: none; }
+.brand-logo {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+}
+
+.brand-text {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.site-nav a {
+  color: var(--text);
+  font-size: 0.96rem;
+}
+
+.site-nav a.active {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.menu-toggle {
+  display: none;
+  border: 1px solid var(--border);
+  background: white;
+  border-radius: 10px;
+  padding: 0.55rem 0.8rem;
+  cursor: pointer;
+}
+
+.hero {
+  padding: 4.5rem 0 4rem;
+}
+
+.hero-home-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
 }
