@@ -9,8 +9,7 @@ if (menuButton && nav) {
 
 const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 document.querySelectorAll('.site-nav a').forEach((link) => {
-  const href = link.getAttribute('href');
-  if (href === currentPage) {
+  if (link.getAttribute('href') === currentPage) {
     link.classList.add('active');
   }
 });
