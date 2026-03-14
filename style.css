@@ -260,3 +260,21 @@ a:hover {
     grid-template-columns: 1fr;
   }
 }
+
+.collaboration-list {
+  margin-top: 18px;
+  padding-left: 20px;
+}
+
+.collaboration-list li {
+  margin-bottom: 16px;
+}
+
+.collaboration-list a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.collaboration-list a:hover {
+  text-decoration: underline;
+}
