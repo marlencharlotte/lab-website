@@ -278,3 +278,27 @@ a:hover {
 .collaboration-list a:hover {
   text-decoration: underline;
 }
+
+.funding-section {
+  text-align: center;
+}
+
+.funding-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.funding-logos img {
+  height: 45px;
+  width: auto;
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+
+.funding-logos img:hover {
+  opacity: 1;
+}
