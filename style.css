@@ -225,10 +225,11 @@ a:hover {
 }
 
 .tool-icon {
-  width: 56px;
-  height: 56px;
+  width: 90px;
+  height: 90px;
   object-fit: contain;
-  margin-bottom: 16px;
+  display: block;
+  margin: 0 auto 18px auto;
 }
 
 .tool-card h2 {
