@@ -129,13 +129,13 @@ a:hover {
 
 .person-profile {
   display: flex;
+  gap: 40px;
   align-items: flex-start;
-  gap: 2rem;
-  margin-top: 1.5rem;
+  margin-top: 25px;
 }
 
 .person-photo {
-  width: 260px;
+  width: 400px;
   max-width: 100%;
   height: auto;
   flex-shrink: 0;
@@ -154,4 +154,10 @@ a:hover {
   .person-profile {
     flex-direction: column;
   }
+}
+
+.person-bio h3,
+.person-bio h4,
+.person-bio p:first-child {
+  margin-top: 0;
 }
