@@ -90,3 +90,32 @@ a:hover {
   font-size: 0.9rem;
   color: var(--muted);
 }
+
+.brand {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.brand-text {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+
+.site-nav {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.site-nav a {
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.site-nav a:hover {
+  color: var(--accent);
+}
+
+.menu-toggle {
+  display: none;
+}
