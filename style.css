@@ -208,3 +208,53 @@ a:hover {
     grid-template-columns: 1fr;
   }
 }
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 30px;
+}
+
+.tool-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 26px;
+  box-shadow: var(--shadow-soft);
+}
+
+.tool-icon {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+
+.tool-card h2 {
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.tool-card p {
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+
+.tool-link {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .tools-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
+}
