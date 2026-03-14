@@ -174,7 +174,7 @@ a:hover {
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 26px;
-  text-align: center;   /* ADD THIS LINE */
+  text-align: center;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
