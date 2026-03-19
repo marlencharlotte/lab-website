@@ -326,3 +326,10 @@ a:hover {
     font-size: 0.95rem;
   }
 }
+
+.hero-logo {
+  width: 220px;
+  max-width: 60%;
+  height: auto;
+  margin: 0 auto;
+}
